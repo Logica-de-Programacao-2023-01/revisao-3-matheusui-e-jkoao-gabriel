@@ -2,6 +2,7 @@ package q5
 
 import "strings"
 
+
 func IsPalindrome(s string) bool {
 	s = strings.ToLower(s)
 	s = removerAlfanumerico(s)
@@ -15,7 +16,8 @@ func IsPalindrome(s string) bool {
 }
 
 func eAlfanumerico(rs rune) bool {
-	if (rs >= 'a' && rs <= 'z') || (rs >= 0 && rs <= 9) {
+
+	if (rs >= 'a' && rs <= 'z') || (rs >= '0' && rs <= '9') {
 		return true
 	}
 	return false
